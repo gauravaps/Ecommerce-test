@@ -6,7 +6,7 @@ import { Select } from 'antd';
 import { useAuth } from '../pages/Usercontext';
 
 const { Option } = Select
-
+ 
 const Adminorders = () => {
     const [status,setstatus]=useState(['Not process','Processing','Shipped','Delivered','Cancel']);
     const[orders,setorders]=useState([])
@@ -49,7 +49,7 @@ const Adminorders = () => {
 
 
   return (
-    <div>
+    <div  className='order'>
         <AdminMenu/>
         <table>
             <thead>
@@ -65,7 +65,7 @@ const Adminorders = () => {
             {orders.map((ord,i)=>{
                 return(
                     <>
-                    <div >
+                    <div className='main2' >
                         <tbody key={ord._id}>
                             <tr>
                                 <td>{i+1}</td>
@@ -103,8 +103,8 @@ const Adminorders = () => {
                             {ord?.products?.map((ord,i)=>{
                                 return(
                                     <>
-                                    <div key={ord._id}>
-                                    <img src={`http://localhost:8080/uploads/${ord.img}`} width={200} height={150} alt="wait something wrong" />
+                                    <div key={ord._id} className='main'>
+                                    <img src={`http://localhost:8080/uploads/${ord.img}`} width={100} height={100} alt="wait something wrong" />
                                     </div>
                                     <div>
                                         <p>{ord.name}</p>
