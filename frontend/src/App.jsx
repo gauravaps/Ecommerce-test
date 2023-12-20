@@ -33,7 +33,7 @@ const App = () => {
       <Route path='/cart' element={<Cartpage/>}/>
 
       {/* all private route  start here */}
-      {/* this new */}
+      {/* this new  route*/}
       <Route path='/dashboard' element={<Privateroute/>}>
         <Route path='user' element={<Userdashboard/>}/>
         <Route path='user/edit' element={<EditUser/>}/>
