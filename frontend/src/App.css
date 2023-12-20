@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(51, 48, 48, 0.281)
+}
+.main-nav{
+    display: grid;
+    grid-template-rows: 50px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.637);
+
+}
+.main-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav ul li{
+    list-style: none;
+    margin: 20px;
+
+}
+.main-nav ul div{
+    display: flex;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px ;
+    
+}
+a:hover{
+    color: yellow
+
+}
+.register ,.login , .edituser,.addproduct{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+
+}
+.register form , .edituser form ,.addproduct form{
+    background-color: white;
+    width: 260px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+ 
+
+}
+.login form {
+    background-color: white;
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.register form input,.login form input , .edituser form input,.addproduct form input{
+    margin: 8px;
+    padding: 4px;
+    width: 220px; 
+    height: 42px;
+    text-indent: 5px;
+}
+.register form button,.login form button , .edituser form button ,.addproduct form button{
+    width: 200px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: rgba(224, 15, 189, 0.938);
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 3px; 
+}
+.fp{
+    color: black;
+    text-decoration: underline; 
+    margin-top: 5px;
+    
+    border-radius: 5px;
+    font-size:  20px;
+    font-weight: 700;
+}
+input[type='file']{
+    width: 180px;
+    border: 1px solid gray;
+}
+
+.fp:hover{
+    color: rgb(113, 12, 207)  
+}
+
+.dashboard{
+    display: flex;
+}
+.dashboard .user-details{
+    background-color: black;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.user-details h1{
+    color: aqua;
+}
+.user-details h3{
+    font-size:  23px;
+    color: wheat;
+
+
+    
+}
+.user-details h3 span{
+    font-size: 23px;
+    color: aqua;
+    margin-right: 17px;
+    
+
+}
+.dashboard-ul{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: black;
+    margin-top: 92px;
+    margin-left: 8px;
+}
+.dashboard-ul div a{
+    margin-top:  9px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.adminmenu {
+    display: flex;
+}
+.adminmenu table {
+    display: grid;
+    background-color: rgba(127, 255, 212, 0.315);
+    width: 800px;
+    grid-template-columns: repeat(autofit,minmax(200,1fr));
+    justify-content: center;
+    min-height: 430px;
+
+    margin-top: 52px;
+    margin-left: 100px;
+
+
+}
+.adminmenu table thead{
+    margin-left: 5px; 
+    
+    
+
+}
+
+.adminmenu table thead tr th {
+    padding: 18px;
+    color: rgba(126, 6, 238, 0.952);
+
+}
+.tbody-child td{
+    padding: 17px;
+    border: 2px solid;
+
+
+}
+.action-btn{
+    padding-left: 190px;
+}
+
+.product-btn{
+    color:black;
+    margin: 5px;
+    border-radius: 5px;
+    
+    background-color: rgba(226, 7, 7, 0.76);
+    text-shadow: 50px;
+    font-weight: 800;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    
+}
+.product-btn:hover{ 
+    background-color: red;
+}
+.product-btnE{
+    color:black;
+    margin: 1px;
+    border-radius: 5px;
+    width: 60px;
+    background-color: rgba(8, 73, 194, 0.856);
+    font-size: medium;
+    font-weight: 800;
+    border: none;
+
+}
+.product-btnE:hover{
+    background-color:green;
+    cursor: pointer;
+    
+    
+    
+    
+} 
+
+.parent{
+    display: grid;
+    grid-template-rows:260px 260px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:1px;
+    place-items: center;
+
+      }
+      
+.child{
+    text-align: center;
+}      
+
+.child h3 span{
+background-color: black;
+    border-radius: 3px;
+    margin: 1px;
+    color:white;
+    border: none;
+    
+}
+.child button{
+    /* background-color:black; */
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 12px;
+    /* color: azure; */
+    margin: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.morebtn{
+    background-color:black;
+    color:aqua;
+}
+
+.cartbtn{
+    background-color: black;
+    color: white;
+}
+
+
+.chai{
+    color: white;
+    font-size: larger;
+    width: 100x;
+    height: 30px;
+}
+.bracket{
+    
+    font-size: 25px;
+    
+    
+}
+
+.productdetail{
+    display:flex;
+
+}
+.productdetail img{
+    margin: 50px;
+    margin-left: 100px;
+
+}
+.detailchild{
+    margin: 50px;
+}
+.detailchild h2 span{
+    margin-right: 12px;
+    font-size: larger;
+} 
+.detailchild button{
+    background-color: black;
+    height: 40px;
+    width: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 12px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.cartpage h2{
+    margin-left: 12px;
+    margin-top: 12px;
+    color: rgb(39, 26, 160);
+
+}
+
+.cartpage h2 p{
+    color: rgb(190, 34, 34);
+}
+.parent-cart{
+    display: flex;
+    min-height: 430px;
+
+}
+.parent-cart .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.parent-cart .second{
+    margin-left: 260px;
+}
+.parent-cart .first img{
+    margin: 5px;
+}
+
+.first button{
+    background: rgb(165, 16, 16);
+    height: 30px;
+    width: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    border-radius:  10px;
+    box-shadow: 2px 2px 2px 2px ;
+    cursor: pointer;
+    
+    
+}
+
+
+.parent .second h2{
+    margin-bottom: 9px;
+}
+.parent .second p{
+    margin-bottom: 4px;
+}
+.parent .second h4{
+    margin-top: 9px;
+}
+
+.parent-cart .second div button{
+    margin-top: 9px;
+    background-color: black;
+    width: 160px;
+    height: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color:  white;
+    border-radius: 10px;
+    margin: 5px;
+    
+    cursor: pointer;
+    text-shadow: 100px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(44, 44, 128);
+    
+}
+
+
+.order table{
+    display: grid;
+    /* background-color: rgb(9, 77, 149); */
+    /* grid-template-rows: 100px; */
+    width:800px;
+    grid-template-columns: repeat(autofit,minmax(200,1fr));
+    justify-content: center;
+    min-height: 420px;
+    margin-left:80px;
+    margin-top: 52px;
+  }
+
+  .order table tbody tr td{
+    border:2px solid white;
+    padding:12px;
+    margin-top:-12px;
+  }
+
+  
+.order table thead tr th{
+    padding: 18px;
+  }
+  .main{
+    display: flex;
+    
+  }
+  .pro{
+    margin: 10px;
+    padding-top: 8px; 
+    
+  }
+  .pro p{
+    font-size: large;
+    font-style: italic;
+  }
+
+   
